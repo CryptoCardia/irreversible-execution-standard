@@ -48,3 +48,11 @@ See the folder structure in this repo:
 ## Normative language
 
 The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are to be interpreted as described in RFC 2119.
+## Core docs
+
+- IES Core: /core/ies-core-v1.md
+- ETG Core: /core/etg-core-v1.md
+- Canonicalization: /core/canonicalization.md
+- Conformance: /core/conformance.md
+- Interoperability: /core/interoperability.md
+- Threat Model: /core/threat-model.md
