@@ -1,5 +1,5 @@
 {
-  "intent_hash": "REPLACE_WITH_COMPUTED_INTENT_HASH",
+  "intent_hash": "2b66b5c0855c256e6ee4b69d8ce8dc1e5ca35882cc6a445a443cd419727a0806",
   "action": "ALLOW",
   "risk_band": "LOW",
   "ttl": 1893456000,
@@ -9,7 +9,7 @@
     "policy_id": "policy_transfer_default",
     "version": 1
   },
-  "exec_hash": "REPLACE_WITH_COMPUTED_EXEC_HASH",
+  "exec_hash": "35963a500049cc0138e0ebbc28e1bf300e3947de71dfaaddb6a497df053c1993",
   "sub": "user:example",
   "sig": "REPLACE_WITH_SIGNATURE"
 }
