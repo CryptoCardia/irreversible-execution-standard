@@ -1,0 +1,15 @@
+{
+  "intent_hash": "REPLACE_WITH_COMPUTED_INTENT_HASH",
+  "action": "ALLOW",
+  "risk_band": "LOW",
+  "ttl": 1893456000,
+  "nonce": 1,
+  "aud": "executor:stablecoin:v1",
+  "policy": {
+    "policy_id": "policy_transfer_default",
+    "version": 1
+  },
+  "exec_hash": "REPLACE_WITH_COMPUTED_EXEC_HASH",
+  "sub": "user:example",
+  "sig": "REPLACE_WITH_SIGNATURE"
+}

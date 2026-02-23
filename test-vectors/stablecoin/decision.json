@@ -1,0 +1,13 @@
+{
+  "intent_id": "intent_sc_001",
+  "risk_band": "LOW",
+  "action": "ALLOW",
+  "policy": {
+    "policy_id": "policy_transfer_default",
+    "version": 1
+  },
+  "reasons": [
+    "baseline_policy_allow"
+  ],
+  "evaluated_at": "2026-02-23T00:00:10Z"
+}

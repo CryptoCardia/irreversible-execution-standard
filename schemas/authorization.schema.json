@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IES Authorization Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intent_hash",
+    "action",
+    "ttl",
+    "nonce",
+    "aud",
+    "sig"
+  ],
+  "properties": {
+    "intent_hash": {
+      "type": "string",
+      "minLength": 16
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "ALLOW",
+        "STEP_UP",
+        "DENY"
+      ]
+    },
+    "risk_band": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "ttl": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "nonce": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "aud": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        }
+      }
+    },
+    "exec_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sub": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sig": {
+      "type": "string",
+      "minLength": 16
+    }
+  }
+}

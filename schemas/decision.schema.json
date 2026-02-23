@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IES Policy Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intent_id",
+    "risk_band",
+    "action",
+    "evaluated_at"
+  ],
+  "properties": {
+    "intent_id": {
+      "type": "string"
+    },
+    "risk_band": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "ALLOW",
+        "STEP_UP",
+        "DENY"
+      ]
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_id",
+        "version"
+      ],
+      "properties": {
+        "policy_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        }
+      }
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

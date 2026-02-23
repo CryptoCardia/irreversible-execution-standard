@@ -1,0 +1,18 @@
+{
+  "id": "intent_rwa_001",
+  "type": "RWA_TRANSFER",
+  "parameters": {
+    "asset_id": "RWA:ACME:REAL_ESTATE:SERIES_A",
+    "jurisdiction": "CA",
+    "quantity": "10",
+    "counterparty": {
+      "legal_entity_id": "LEI:5493001KJTIIGC8Y1R12",
+      "address": "0xCounterpartyExample0000000000000000000000"
+    },
+    "compliance_context": {
+      "ref": "COMPLIANCE_CASE_2026_001",
+      "state_hash": "0xdeadbeef"
+    }
+  },
+  "created_at": "2026-02-23T00:00:00Z"
+}
